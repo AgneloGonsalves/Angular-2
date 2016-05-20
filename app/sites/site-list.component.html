@@ -1,0 +1,45 @@
+<article class="template animated slideInRight">
+  <h4>My Sites</h4>
+
+  <!--<button class="dashboard-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" [routerLink]="['Site', {id: 'new'}]">Add</button>-->
+
+  <filter-text (changed)="filterChanged($event)"></filter-text>
+
+    <!--<ul class="sites">
+        <li *ngfor="#site of filteredSites | sortSites">
+            <div class="mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">
+                        {{site.id}}.
+                        {{site.name}}
+                    </h2>
+
+                </div>
+                <div class="mdl-card__menu">
+                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" [routerlink]="['Site', {id: site.id}]">
+                        <div class="icon mdl-color--accent icon-ic_play_circle_filled_white_24dp"></div>
+                    </button>
+                </div>
+            </div>
+        </li>
+    </ul>-->
+
+      <table  class="table table-striped">
+          <thead>
+              <tr>
+                  <th>Name</th>
+                  <th>Location</th>
+                  <th>Stage</th>
+                  <th>Description</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="#site of filteredSites | sortSites" classname="">
+                  <td>{{site.name}}</td>
+                  <td>{{site.location}}</td>
+                  <td>{{site.stage}}</td>
+                  <td>{{site.description}}</td>
+              </tr>
+          </tbody>
+</table>
+</article>

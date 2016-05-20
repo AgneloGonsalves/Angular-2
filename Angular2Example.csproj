@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{F835BDB7-33AC-44ED-B2FA-6C1B236D4FB5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="app\app.component.css" />
+    <Content Include="app\app.component.html" />
+    <Content Include="app\blocks\filter-text\filter-text.component.html" />
+    <Content Include="app\blocks\modal\modal.component.css" />
+    <Content Include="app\blocks\modal\modal.component.html" />
+    <Content Include="app\blocks\toast\toast.component.css" />
+    <Content Include="app\blocks\toast\toast.component.html" />
+    <Content Include="app\sites\site-list.component.css" />
+    <Content Include="app\sites\site-list.component.html" />
+    <Content Include="app\sites\site.component.html" />
+    <Content Include="app\ps-icon.png" />
+    <Content Include="assets\animate.css" />
+    <Content Include="assets\app.css" />
+    <Content Include="assets\material.deep_orange-pink.min.css" />
+    <Content Include="assets\material.min.js" />
+    <Content Include="assets\sprite-av-white.css" />
+    <Content Include="assets\sprite-av-white.png" />
+    <Content Include="index.html" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="package.json" />
+    <Content Include="api\sites.json" />
+    <Content Include="api\resources.json" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="api\in-memory-track.service.ts" />
+    <TypeScriptCompile Include="app\app.component.ts" />
+    <TypeScriptCompile Include="app\blocks\blocks.ts" />
+    <TypeScriptCompile Include="app\blocks\entity.service.ts" />
+    <TypeScriptCompile Include="app\blocks\exception.service.ts" />
+    <TypeScriptCompile Include="app\blocks\filter-text\filter-text.component.ts" />
+    <TypeScriptCompile Include="app\blocks\filter-text\filter-text.service.ts" />
+    <TypeScriptCompile Include="app\blocks\filter-text\filter-text.ts" />
+    <TypeScriptCompile Include="app\blocks\init-caps.pipe.ts" />
+    <TypeScriptCompile Include="app\blocks\modal\modal.component.ts" />
+    <TypeScriptCompile Include="app\blocks\modal\modal.service.ts" />
+    <TypeScriptCompile Include="app\blocks\modal\modal.ts" />
+    <TypeScriptCompile Include="app\blocks\spinner\spinner.component.ts" />
+    <TypeScriptCompile Include="app\blocks\spinner\spinner.service.ts" />
+    <TypeScriptCompile Include="app\blocks\spinner\spinner.ts" />
+    <TypeScriptCompile Include="app\blocks\toast\toast.component.ts" />
+    <TypeScriptCompile Include="app\blocks\toast\toast.service.ts" />
+    <TypeScriptCompile Include="app\blocks\toast\toast.ts" />
+    <TypeScriptCompile Include="app\sites\site-list.component.ts" />
+    <TypeScriptCompile Include="app\sites\site.component.ts" />
+    <TypeScriptCompile Include="app\sites\site.service.ts" />
+    <TypeScriptCompile Include="app\sites\sites.component.ts" />
+    <TypeScriptCompile Include="app\sites\sites.ts" />
+    <TypeScriptCompile Include="app\sites\sort-sites.pipe.ts" />
+    <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\shared\config.ts" />
+    <TypeScriptCompile Include="app\shared\message.service.ts" />
+    <TypeScriptCompile Include="app\shared\shared.ts" />
+    <TypeScriptCompile Include="app\t.d.ts" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Angular2Example</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61494</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:61494/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>system</TypeScriptModuleKind>
+    <TypeScriptEmitDecoratorMetadata>true</TypeScriptEmitDecoratorMetadata>
+    <TypeScriptModuleResolution>Node</TypeScriptModuleResolution>
+    <TypeScriptExperimentalDecorators>true</TypeScriptExperimentalDecorators>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+    <TypeScriptEmitDecoratorMetadata>true</TypeScriptEmitDecoratorMetadata>
+    <TypeScriptModuleResolution>Node</TypeScriptModuleResolution>
+    <TypeScriptExperimentalDecorators>true</TypeScriptExperimentalDecorators>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+</Project>
